@@ -25,7 +25,7 @@ span:nth-child(3), span:nth-child(5), span:nth-child(6){
 /*containers*/
 div div{
     display:inline-block;
-    margin-top:150px;
+    margin-top:145px;
     vertical-align: text-top;
     padding: 0px 25px;
     height: 100%;
