@@ -14,6 +14,7 @@ $(
     }
 );
 
+// Function to change the status of the recipe
 function interactIcon(evt){
 
     color = colorCheck(evt.target);
@@ -39,6 +40,7 @@ function interactIcon(evt){
 
 }
 
+// Function to verify before changing the color of icon
 function colorCheck(target)
 {
     var color;
@@ -56,6 +58,7 @@ function colorCheck(target)
     return color;
 }
 
+// Function to check all possible dependency
 function dependencyCheck(target)
 {
     var depend = true;
