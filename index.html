@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conan Exiles - Recipe Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<p id="title">
+    <span>Conan Exiles - Recipe Tree</span><br>
+    <span>Level 50</span><br>
+    <span>Recipe points </span><span id="rcp"></span>
+</p>
+<div>
+    <div>
+        <p>Level 1</p>
+        <img id="pickaxe-1" src="img/lvl/01/icon_pickaxe-1.png"><p>ACQUIRED</p>
+        <img id="worker_shirt" src="img/lvl/01/icon_worker_shirt.png"><p>ACQUIRED</p>
+        <img id="t1_altar_of_mitra" src="img/lvl/01/icon_t1_altar_of_mitra.png" value="50"><p>COST 50</p>
+        <img id="t1_alter_of_set" src="img/lvl/01/icon_t1_alter_of_set.png" value="50"><p>COST 50</p>
+        <img id="t1_alter_of_yog" src="img/lvl/01/icon_t1_alter_of_yog.png" value="50"><p>COST 50</p>
+    </div>
+    <div>
+        <p>Level 2</p>
+        <img id="apprentice_crafter" src="img/lvl/02/icon_apprentice_crafter.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 3</p>
+        <img id="Foundation-1" src="img/lvl/03/Icon_Foundation-1.png" value="1"><p>COST 1</p>
+        <img id="campfire_1" src="img/lvl/03/icon_campfire_1.png" value="1"><p>COST 1</p>
+        <img id="primal_sword-1" src="img/lvl/03/icon_primal_sword-1.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 5</p>
+        <img id="basic_wood_bow" src="img/lvl/05/icon_basic_wood_bow.png" value="2"><p>COST 2</p>
+        <img id="stone_club-1" src="img/lvl/05/icon_stone_club-1.png" value="2"><p>COST 2</p>
+        <img id="torch" src="img/lvl/05/icon_torch.png" value="1"><p>COST 1</p>
+        <img id="wooden_box" src="img/lvl/05/icon_wooden_box.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 6</p>
+        <img id="armormaking_bench" src="img/lvl/06/icon_armormaking_bench.png" value="2"><p>COST 2</p>
+        <img id="light_exile_armor" src="img/lvl/06/icon_light_exile_armor.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 7</p>
+        <img id="White_candle-1" src="img/lvl/07/icon_White_candle-1.png" value="1"><p>COST 1</p>
+        <img id="light_exile_loincloth" src="img/lvl/07/icon_light_exile_loincloth.png" value="2"><p>COST 2</p>
+        <img id="pillar-1" src="img/lvl/07/icon_pillar-1.png" value="1"><p>COST 1</p>
+        <img id="stairs-1" src="img/lvl/07/icon_stairs-1.png" value="1"><p>COST 1</p>
+        <img id="poniard_stone_t1" src="img/lvl/07/icon_poniard_stone_t1.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 8</p>
+        <img id="wall_torch-1" src="img/lvl/08/icon_wall_torch-1.png" value="1"><p>COST 1</p>
+        <img id="light_exile_cap" src="img/lvl/08/icon_light_exile_cap.png" value="2"><p>COST 2</p>
+        <img id="window_wall-1" src="img/lvl/08/icon_window_wall-1.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 9</p>
+        <img id="light_exile_boots" src="img/lvl/09/icon_light_exile_boots.png" value="1"><p>COST 1</p>
+        <img id="light_exile_gauntlets" src="img/lvl/09/icon_light_exile_gauntlets.png" value="1"><p>COST 1</p>
+        <img id="triangle_foundation-1" src="img/lvl/09/icon_triangle_foundation-1.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 10</p>
+        <img id="furnace" src="img/lvl/10/icon_furnace.png" value="3"><p>COST 3</p>
+        <img id="woodworking_bench" src="img/lvl/10/icon_woodworking_bench.png" value="3"><p>COST 3</p>
+        <img id="iron_shield-1" src="img/lvl/10/icon_iron_shield-1.png" value="3"><p>COST 3</p>
+        <img id="warhammer" src="img/lvl/10/icon_warhammer.png" value="3"><p>COST 3</p>
+        <img id="journeyman_crafter" src="img/lvl/10/icon_journeyman_crafter.png" value="3"><p>COST 3</p>
+        <img id="t1_fence" src="img/lvl/10/icon_t1_fence.png" value="1"><p>COST 1</p>
+        <img id="t1_fence_foundation" src="img/lvl/10/icon_t1_fence_foundation.png" value="1"><p>COST 1</p>
+        <img id="tannery" src="img/lvl/10/icon_tannery.png" value="3"><p>COST 3</p>
+        <img id="rope" src="img/lvl/10/icon_rope.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 11</p>
+        <img id="torch_standing" src="img/lvl/11/icon_torch_standing.png" value="1"><p>COST 1</p>
+        <img id="t1_wall_sloped_left" src="img/lvl/11/icon_t1_wall_sloped_left.png" value="1"><p>COST 1</p>
+        <img id="t1_wall_sloped_right" src="img/lvl/11/icon_t1_wall_sloped_right.png" value="1"><p>COST 1</p>
+        <img id="t1_roofSloped" src="img/lvl/11/icon_t1_roofSloped.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 12</p>
+        <img id="t1_roofSloped_triangle_down" src="img/lvl/12/icon_t1_roofSloped_triangle_down.png" value="1"><p>COST 1</p>
+        <img id="exile_broadsword" src="img/lvl/12/icon_exile_broadsword.png" value="3"><p>COST 3</p>
+        <img id="t1_roofSloped_triangle_up" src="img/lvl/12/icon_t1_roofSloped_triangle_up.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 13</p>
+        <img id="wooden_bed" src="img/lvl/13/icon_wooden_bed.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 14</p>
+        <img id="trophy_gazelle" src="img/lvl/14/icon_trophy_gazelle.png" value="2"><p>COST 2</p>
+        <img id="table_1" src="img/lvl/14/icon_table_1.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 15</p>
+        <img id="mixer" src="img/lvl/15/icon_mixer.png" value="4"><p>COST 4</p>
+        <img id="horn" src="img/lvl/15/icon_horn.png" value="1"><p>COST 1</p>
+        <img id="long_spear-1" src="img/lvl/15/icon_long_spear-1.png" value="4"><p>COST 4</p>
+        <img id="poniard_t2" src="img/lvl/15/icon_poniard_t2.png" value="4"><p>COST 4</p>
+        <img id="Javelin-1" src="img/lvl/15/icon_Javelin-1.png" value="4"><p>COST 4</p>
+        <img id="Medium_exile_harness-1" src="img/lvl/15/icon_Medium_exile_harness-1.png" value="4"><p>COST 4</p>
+        <img id="pottery-1" src="img/lvl/15/icon_pottery-1.png" value="1"><p>COST 1</p>
+        <img id="flag_hanging1_stygia" src="img/lvl/15/icon_flag_hanging1_stygia.png" value="1"><p>COST 1</p>
+        <img id="flag_standing_stygia" src="img/lvl/15/icon_flag_standing_stygia.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 16</p>
+        <img id="bonfire" src="img/lvl/16/icon_bonfire.png" value="2"><p>COST 2</p>
+        <img id="Medium_exile_tasset-1" src="img/lvl/16/icon_Medium_exile_tasset-1.png" value="4"><p>COST 4</p>
+        <img id="hide_rug" src="img/lvl/16/icon_hide_rug.png" value="1"><p>COST 1</p>
+        <img id="stool_A" src="img/lvl/16/icon_stool_A.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 17</p>
+        <img id="crossbow-1" src="img/lvl/17/icon_crossbow-1.png" value="4"><p>COST 4</p>
+        <img id="ironhead_arrow" src="img/lvl/17/icon_ironhead_arrow.png" value="2"><p>COST 2</p>
+        <img id="Medium_exile_cap-1" src="img/lvl/17/icon_Medium_exile_cap-1.png" value="4"><p>COST 4</p>
+        <img id="siege_palisade_2" src="img/lvl/17/icon_siege_palisade_2.png" value="2"><p>COST 2</p>
+        <img id="siege_palisade_1" src="img/lvl/17/icon_siege_palisade_1.png" value="2"><p>COST 2</p>
+        <img id="chair_2" src="img/lvl/17/icon_chair_2.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 18</p>
+        <img id="log_bench" src="img/lvl/18/icon_log_bench.png" value="1"><p>COST 1</p>
+        <img id="Medium_exile_boots-1" src="img/lvl/18/icon_Medium_exile_boots-1.png" value="2"><p>COST 2</p>
+        <img id="Medium_exile_gauntlets-1" src="img/lvl/18/icon_Medium_exile_gauntlets-1.png" value="2"><p>COST 2</p>
+        <img id="spike" src="img/lvl/18/icon_spike.png" value="1"><p>COST 1</p>
+        <img id="orange_tapestry" src="img/lvl/18/icon_orange_tapestry.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 19</p>
+        <img id="carpet_stygian_1" src="img/lvl/19/icon_carpet_stygian_1.png" value="1"><p>COST 1</p>
+    </div>
+    <div>
+        <p>Level 20</p>
+        <img id="fire_arrow" src="img/lvl/20/icon_fire_arrow.png" value="3"><p>COST 3</p>
+        <img id="fire_bolt" src="img/lvl/20/icon_fire_bolt.png" value="3"><p>COST 3</p>
+        <img id="t2_foundation" src="img/lvl/20/icon_t2_foundation.png" value="2"><p>COST 2</p>
+        <img id="chest" src="img/lvl/20/icon_chest.png" value="5"><p>COST 5</p>
+        <img id="t2_altar_of_mitra" src="img/lvl/20/icon_t2_altar_of_mitra.png" value="10"><p>COST 10</p>
+        <img id="t2_alter_of_set" src="img/lvl/20/icon_t2_alter_of_set.png" value="10"><p>COST 10</p>
+        <img id="t2_alter_of_yog" src="img/lvl/20/icon_t2_alter_of_yog.png" value="10"><p>COST 10</p>
+        <img id="khopesh-1" src="img/lvl/20/icon_khopesh-1.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 21</p>
+        <img id="trophy_white" src="img/lvl/21/icon_trophy_white.png" value="3"><p>COST 3</p>
+        <img id="t2_wall" src="img/lvl/21/icon_t2_wall.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 22</p>
+        <img id="t2_ceiling" src="img/lvl/22/icon_t2_ceiling.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 23</p>
+        <img id="t2_doorFrame" src="img/lvl/23/icon_t2_doorFrame.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 24</p>
+        <img id="flag_hanging2_stygia" src="img/lvl/24/icon_flag_hanging2_stygia.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 25</p>
+        <img id="composite_bow" src="img/lvl/25/icon_composite_bow.png" value="6"><p>COST 6</p>
+        <img id="t2_pillar" src="img/lvl/25/icon_t2_pillar.png" value="2"><p>COST 2</p>
+        <img id="t2_stairs" src="img/lvl/25/icon_t2_stairs.png" value="2"><p>COST 2</p>
+        <img id="throwing_axe" src="img/lvl/25/icon_throwing_axe.png" value="6"><p>COST 6</p>
+        <img id="large_water_well" src="img/lvl/25/icon_large_water_well.png" value="6"><p>COST 6</p>
+    </div>
+    <div>
+        <p>Level 26</p>
+        <img id="falcata" src="img/lvl/26/icon_falcata.png" value="3"><p>COST 3</p>
+        <img id="t2_triangle" src="img/lvl/26/icon_t2_triangle.png" value="2"><p>COST 2</p>
+        <img id="t2_triangle_foundation" src="img/lvl/26/icon_t2_triangle_foundation.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 27</p>
+        <img id="t2_fence" src="img/lvl/27/icon_t2_fence.png" value="2"><p>COST 2</p>
+        <img id="t2_fence_foundation" src="img/lvl/27/icon_t2_fence_foundation.png" value="2"><p>COST 2</p>
+        <img id="t2_gate_doors" src="img/lvl/27/icon_t2_gate_doors.png" value="6"><p>COST 6</p>
+        <img id="t2_gate_frame" src="img/lvl/27/icon_t2_gate_frame.png" value="6"><p>COST 6</p>
+    </div>
+    <div>
+        <p>Level 28</p>
+        <img id="cutlass" src="img/lvl/28/icon_cutlass.png" value="3"><p>COST 3</p>
+        <img id="t1_wall_sloped_left" src="img/lvl/28/icon_t1_wall_sloped_left.png" value="2"><p>COST 2</p>
+        <img id="t1_wall_sloped_right" src="img/lvl/28/icon_t1_wall_sloped_right.png" value="2"><p>COST 2</p>
+        <img id="t2_roofSloped" src="img/lvl/28/icon_t2_roofSloped.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 29</p>
+        <img id="t2_roofSloped_triangle_down" src="img/lvl/29/icon_t2_roofSloped_triangle_down.png" value="2"><p>COST 2</p>
+        <img id="t2_windowWall" src="img/lvl/29/icon_t2_windowWall.png" value="2"><p>COST 2</p>
+        <img id="stygian_bronze_spear" src="img/lvl/29/icon_stygian_bronze_spear.png" value="6"><p>COST 6</p>
+        <img id="t2_roofSloped_triangle_up" src="img/lvl/29/icon_t2_roofSloped_triangle_up.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 30</p>
+        <img id="heavy_exile_pauldron" src="img/lvl/30/icon_heavy_exile_pauldron.png" value="7"><p>COST 7</p>
+        <img id="longsword" src="img/lvl/30/icon_longsword.png" value="7"><p>COST 7</p>
+        <img id="master_crafter" src="img/lvl/30/icon_master_crafter.png" value="7"><p>COST 7</p>
+        <img id="t3_foundation" src="img/lvl/30/icon_t3_foundation.png" value="2"><p>COST 2</p>
+        <img id="sandstorm_mask" src="img/lvl/30/icon_sandstorm_mask.png" value="14"><p>COST 14</p>
+        <img id="wheel_of_pain_xl" src="img/lvl/30/icon_wheel_of_pain_xl.png" value="7"><p>COST 7</p>
+    </div>
+    <div>
+        <p>Level 31</p>
+        <img id="ancient_iron_sword" src="img/lvl/31/icon_ancient_iron_sword.png" value="4"><p>COST 4</p>
+        <img id="darfari_wind_chimes" src="img/lvl/31/icon_darfari_wind_chimes.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 32</p>
+        <img id="t3_wall" src="img/lvl/32/icon_t3_wall.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 33</p>
+        <img id="shelf" src="img/lvl/33/icon_shelf.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 34</p>
+        <img id="t3_ceiling" src="img/lvl/34/icon_t3_ceiling.png" value="2"><p>COST 2</p>
+        <img id="heater_shield" src="img/lvl/34/icon_heater_shield.png" value="7"><p>COST 7</p>
+    </div>
+    <div>
+        <p>Level 35</p>
+        <img id="archery_target" src="img/lvl/35/icon_archery_target.png" value="2"><p>COST 2</p>
+        <img id="poignard" src="img/lvl/35/icon_poignard.png" value="8"><p>COST 8</p>
+    </div>
+    <div>
+        <p>Level 36</p>
+        <img id="cimmerian_battleaxe" src="img/lvl/36/icon_cimmerian_battleaxe.png" value="8"><p>COST 8</p>
+        <img id="heavy_exile_tasset" src="img/lvl/36/icon_heavy_exile_tasset.png" value="8"><p>COST 8</p>
+        <img id="t3_doorFrame" src="img/lvl/36/icon_t3_doorFrame.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 37</p>
+        <img id="beer_keg" src="img/lvl/37/icon_beer_keg.png" value="2"><p>COST 2</p>
+    </div>
+    <div>
+        <p>Level 38</p>
+        <img id="explosive_jar-1" src="img/lvl/38/icon_explosive_jar-1.png" value="16"><p>COST 16</p>
+    </div>
+    <div>
+        <p>Level 39</p>
+        <img id="heavy_exile_helmet" src="img/lvl/39/icon_heavy_exile_helmet.png" value="8"><p>COST 8</p>
+    </div>
+    <div>
+        <p>Level 40</p>
+        <img id="metal_pot_1" src="img/lvl/40/icon_metal_pot_1.png" value="3"><p>COST 3</p>
+        <img id="razor_arrow" src="img/lvl/40/icon_razor_arrow.png" value="5"><p>COST 5</p>
+        <img id="razor_bolt" src="img/lvl/40/icon_razor_bolt.png" value="5"><p>COST 5</p>
+        <img id="t3_pillar" src="img/lvl/40/icon_t3_pillar.png" value="3"><p>COST 3</p>
+        <img id="t3_stairs" src="img/lvl/40/icon_t3_stairs.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 41</p>
+        <img id="awning_orange" src="img/lvl/41/icon_awning_orange.png" value="3"><p>COST 3</p>
+        <img id="papyrus_scroll" src="img/lvl/41/icon_papyrus_scroll.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 42</p>
+        <img id="ancient_iron_shield" src="img/lvl/42/icon_ancient_iron_shield.png" value="9"><p>COST 9</p>
+        <img id="flag_hanging3_stygia" src="img/lvl/42/icon_flag_hanging3_stygia.png" value="3"><p>COST 3</p>
+        <img id="t3_triangle" src="img/lvl/42/icon_t3_triangle.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 43</p>
+        <img id="heavy_exile_gauntlets" src="img/lvl/43/icon_heavy_exile_gauntlets.png" value="5"><p>COST 5</p>
+        <img id="t3_triangle_foundation" src="img/lvl/43/icon_t3_triangle_foundation.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 44</p>
+        <img id="heavy_exile_sabatons" src="img/lvl/44/icon_heavy_exile_sabatons.png" value="5"><p>COST 5</p>
+        <img id="t3_fence" src="img/lvl/44/icon_t3_fence.png" value="3"><p>COST 3</p>
+        <img id="t3_fence_foundation" src="img/lvl/44/icon_t3_fence_foundation.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 45</p>
+        <img id="multi_tool" src="img/lvl/45/icon_multi_tool.png" value="10"><p>COST 10</p>
+        <img id="trident" src="img/lvl/45/icon_trident.png" value="10"><p>COST 10</p>
+        <img id="vault" src="img/lvl/45/icon_vault.png" value="10"><p>COST 10</p>
+        <img id="wall_lantern" src="img/lvl/45/icon_wall_lantern.png" value="3"><p>COST 3</p>
+        <img id="t3_gate_doors" src="img/lvl/45/icon_t3_gate_doors.png" value="10"><p>COST 10</p>
+        <img id="t3_gate_frame" src="img/lvl/45/icon_t3_gate_frame.png" value="10"><p>COST 10</p>
+    </div>
+    <div>
+        <p>Level 46</p>
+        <img id="t1_wall_sloped_left" src="img/lvl/46/icon_t1_wall_sloped_left.png" value="3"><p>COST 3</p>
+        <img id="t1_wall_sloped_right" src="img/lvl/46/icon_t1_wall_sloped_right.png" value="3"><p>COST 3</p>
+        <img id="t3_roofSloped" src="img/lvl/46/icon_t3_roofSloped.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 47</p>
+        <img id="trophy_rocknose" src="img/lvl/47/icon_trophy_rocknose.png" value="5"><p>COST 5</p>
+        <img id="t3_roofSloped_triangle_down" src="img/lvl/47/icon_t3_roofSloped_triangle_down.png" value="3"><p>COST 3</p>
+        <img id="t3_roofSloped_triangle_up" src="img/lvl/47/icon_t3_roofSloped_triangle_up.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 48</p>
+        <img id="t3_windowWall" src="img/lvl/48/icon_t3_windowWall.png" value="3"><p>COST 3</p>
+    </div>
+    <div>
+        <p>Level 49</p>
+        <img id="gong" src="img/lvl/49/icon_gong.png" value="3"><p>COST 3</p>
+        <img id="t2_water_well" src="img/lvl/49/icon_t2_water_well.png" value="10"><p>COST 10</p>
+    </div>
+    <div>
+        <p>Level 50</p>
+        <img id="wheel_of_pain_xxl" src="img/lvl/50/icon_wheel_of_pain_xxl.png" value="11"><p>COST 11</p>
+        <img id="t3_altar_of_mitra" src="img/lvl/50/icon_t3_altar_of_mitra.png" value="11"><p>COST 11</p>
+        <img id="t3_alter_of_set" src="img/lvl/50/icon_t3_alter_of_set.png" value="11"><p>COST 11</p>
+        <img id="t3_alter_of_yog" src="img/lvl/50/icon_t3_alter_of_yog.png" value="11"><p>COST 11</p>
+        <img id="throne" src="img/lvl/50/icon_throne.png" value="11"><p>COST 11</p>
+    </div>
+</div>
+</body>
+</html>

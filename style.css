@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    white-space: nowrap;
+    float:left;
+    background-image: url("img/background/main.png");
+    text-align:center;
+    font-weight: bold;
+    font-family:calibri;
+}
+
+/*info fixed*/
+#title{
+    margin-top:30px;
+    position:fixed;
+    background-image: url("img/background/black.png");
+    text-align:left;
+    font-size:20px;
+    color:white;
+}
+
+span:nth-child(3), span:nth-child(5), span:nth-child(6){
+    font-size:15px;
+}
+
+/*containers*/
+div div{
+    display:inline-block;
+    margin-top:150px;
+    vertical-align: text-top;
+    padding: 0px 25px;
+    height: 100%;
+    border-right:2px solid #353535;
+
+}
+
+/*last container*/
+div div:last-child{
+    border:0;
+}
+
+/*div children [lvl, icon, cost]*/
+div div *{
+    width:80px;
+    float:left;
+    clear:left;
+}
+
+/*lvl*/
+p:first-child{
+    font-size:24px;
+}
+
+/*icon*/
+p+img{
+    background-image: url("img/background/orange.png");
+    border:1px solid white;
+}
+
+#pickaxe-1, #worker_shirt{
+    background-image: url("img/background/green.png");
+}
+
+/*cost*/
+img~p{
+    margin-top:0;
+    background-image: url("img/background/black.png");
+    border:1px solid white;
+    border-top:0;
+    color:white;
+}
